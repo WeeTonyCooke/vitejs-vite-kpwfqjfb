@@ -1,0 +1,141 @@
+/* ── Page wrapper ─────────────────────────────────────── */
+.home-page {
+  min-height: 100vh;
+}
+
+/* ── Festival info section ────────────────────────────── */
+.info-section {
+  background-color: #f4efe6;
+  padding: 80px 24px 100px;
+}
+
+@media (max-width: 600px) {
+  .info-section {
+    padding: 56px 20px 72px;
+  }
+}
+
+.info-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+/* ── Section intro ────────────────────────────────────── */
+.info-intro {
+  max-width: 640px;
+  margin-bottom: 64px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(31, 78, 95, 0.14);
+}
+
+.info-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  font-weight: 700;
+  color: #1F4E5F;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  margin: 0 0 24px;
+}
+
+.info-body p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #354a52;
+  margin: 0 0 14px;
+}
+
+.info-body p:last-child {
+  margin-bottom: 0;
+  color: #6b848e;
+  font-style: italic;
+}
+
+/* ── Cards grid ───────────────────────────────────────── */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 860px) {
+  .info-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .info-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 22px 22px 24px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 78, 95, 0.13);
+  border-radius: 3px;
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  border-color: rgba(31, 78, 95, 0.5);
+  box-shadow: 0 2px 16px rgba(31, 78, 95, 0.07);
+}
+
+.info-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1F4E5F;
+}
+
+.info-card-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #7a949e;
+}
+
+.info-card-arrow {
+  font-size: 1rem;
+  color: #1F4E5F;
+  opacity: 0.3;
+  flex-shrink: 0;
+  margin-left: 16px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.info-card:hover .info-card-arrow {
+  opacity: 0.8;
+  transform: translateX(3px);
+}
+
+/* ── Footer ───────────────────────────────────────────── */
+.site-footer {
+  background: #1F4E5F;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.site-footer p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.73rem;
+  letter-spacing: 0.07em;
+  color: rgba(255, 255, 255, 0.38);
+  margin: 0;
+}
