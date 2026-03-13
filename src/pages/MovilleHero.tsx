@@ -18,7 +18,6 @@ const MovilleHero: React.FC = () => {
     };
 
     updateTimeTheme();
-
     const interval = window.setInterval(updateTimeTheme, 60 * 1000);
 
     return () => window.clearInterval(interval);
@@ -36,11 +35,11 @@ const MovilleHero: React.FC = () => {
       <div className="moville-hero__overlay" />
 
       <div className="moville-hero__content">
-        <h1 className="moville-hero__title">Moville Festival</h1>
+        <h1 className="moville-hero__title">Moville Festival 2026</h1>
 
         <p className="moville-hero__copy">
-          Music, atmosphere and a festival weekend on the Inishowen coast.
-          Full details and announcements coming soon.
+          Music, food and community on the shores of Lough Foyle.
+          Dates to be announced.
         </p>
 
         <div className="moville-hero__actions">

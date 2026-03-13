@@ -4,20 +4,16 @@ import './HoldingPage.css';
 const HoldingPage: React.FC = () => {
   return (
     <main className="holding-page">
-      <section className="content-section">
-        <div className="section-container">
-          <h2 className="section-heading">Programme</h2>
-
-          <p>
-            We’re currently preparing the next edition of Moville Festival.
-            Music, food, pop-ups and more details will be announced soon.
-          </p>
-
-          <p>
-            In the meantime, follow our updates and start planning your visit
-            to Moville on the beautiful Inishowen Peninsula.
-          </p>
-        </div>
+      <section className="holding-panel">
+        <p className="holding-kicker">Moville Festival 2026</p>
+        <h1 className="holding-title">Programme</h1>
+        <p className="holding-copy">
+          The full programme will be announced shortly.
+        </p>
+        <p className="holding-copy">
+          Music, food, pop-ups and more details will appear here as plans are
+          confirmed.
+        </p>
       </section>
     </main>
   );

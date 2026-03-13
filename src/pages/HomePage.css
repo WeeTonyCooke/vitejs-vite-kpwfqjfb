@@ -45,7 +45,7 @@
 }
 
 .section-content {
-  max-width: 700px;
+  max-width: 720px;
 }
 
 .section-content p {
@@ -63,6 +63,10 @@
   font-size: 1.18rem;
   line-height: 1.7;
   color: #16302d;
+}
+
+.section-note {
+  margin-top: 28px !important;
 }
 
 .info-grid {
