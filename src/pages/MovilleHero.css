@@ -48,17 +48,6 @@
   color: var(--white);
 }
 
-.moville-hero__eyebrow {
-  margin: 0 0 14px;
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.26em;
-  text-transform: uppercase;
-  color: var(--gold);
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
-}
-
 .moville-hero__title {
   margin: 0;
   max-width: 700px;
@@ -71,12 +60,12 @@
 }
 
 .moville-hero__copy {
-  margin: 22px 0 0;
+  margin: 18px 0 0;
   max-width: 560px;
   font-family: var(--font-sans);
   font-size: clamp(1rem, 1.8vw, 1.12rem);
-  line-height: 1.75;
-  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.92);
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.36);
 }
 
@@ -121,6 +110,11 @@
   background: rgba(7, 19, 29, 0.22);
 }
 
+.moville-hero__button--reset {
+  appearance: none;
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
   .moville-hero__content {
     padding: 120px 22px 48px;
@@ -145,12 +139,6 @@
     padding: 108px 20px 34px;
   }
 
-  .moville-hero__eyebrow {
-    margin-bottom: 12px;
-    font-size: 0.74rem;
-    letter-spacing: 0.22em;
-  }
-
   .moville-hero__title {
     max-width: 100%;
     font-size: clamp(2.2rem, 12vw, 3.8rem);
@@ -158,9 +146,9 @@
   }
 
   .moville-hero__copy {
-    margin-top: 18px;
+    margin-top: 16px;
     font-size: 1rem;
-    line-height: 1.65;
+    line-height: 1.5;
   }
 
   .moville-hero__actions {

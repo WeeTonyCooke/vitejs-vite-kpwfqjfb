@@ -25,6 +25,13 @@ const MovilleHero: React.FC = () => {
 
   const heroImage = isNight ? NIGHT_IMG : DAY_IMG;
 
+  const scrollToUpdates = () => {
+    const updatesSection = document.getElementById('updates');
+    if (updatesSection) {
+      updatesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section
       className="moville-hero"
@@ -37,20 +44,22 @@ const MovilleHero: React.FC = () => {
       <div className="moville-hero__content">
         <h1 className="moville-hero__title">Moville Festival 2026</h1>
 
-        <p className="moville-hero__copy">
-          Music, food and community on the shores of Lough Foyle.
-          Dates to be announced.
-        </p>
+        <p className="moville-hero__copy">8–12 July 2026</p>
 
         <div className="moville-hero__actions">
-          <a className="moville-hero__button" href="#updates">
+          <button
+            type="button"
+            className="moville-hero__button moville-hero__button--reset"
+            onClick={scrollToUpdates}
+          >
             Latest Updates
-          </a>
+          </button>
+
           <a
             className="moville-hero__button moville-hero__button--ghost"
-            href="#about"
+            href="/programme"
           >
-            About the Festival
+            Programme
           </a>
         </div>
       </div>
